@@ -16,6 +16,11 @@
         <pathelement location="bin"/>
         <path refid="JavaFX SDK.libraryclasspath"/>
     </path>
+	<path id="build-classpath">
+            <fileset dir="${libs.dir}">
+        	<include name="*.jar" />
+    	</fileset>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
