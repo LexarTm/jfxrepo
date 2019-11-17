@@ -8,6 +8,6 @@ addons:
   token: "eb58b1ef8a818b45effb5f03f3391ba685d1c633"
   
 script:
-  - ant build/build.xml
+  - ant build/build
   #- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=LexarTm_nojfxrepo
   - sonar-scanner
